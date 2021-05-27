@@ -23,9 +23,11 @@
   "homepage": "https://github.com/george-shammar/iWeather#readme",
   "devDependencies": {
     "babel-eslint": "10.1.x",
+    "css-loader": "^5.2.6",
     "eslint": "6.8.x",
     "eslint-config-airbnb-base": "14.1.x",
     "eslint-plugin-import": "2.20.x",
+    "style-loader": "^2.0.0",
     "stylelint": "13.3.x",
     "stylelint-config-standard": "20.0.x",
     "stylelint-csstree-validator": "^1.9.0",
