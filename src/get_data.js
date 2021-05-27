@@ -15,3 +15,5 @@ async function getData() {
         console.log(err);
     }
 }
+
+export default getData;
