@@ -1,17 +1,18 @@
 
 const dataInfo = () => {
-    let location = "Accra"
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${location},uk&APPID=c7911001fbb406aa98e26c70ab98ec78`, {mode: 'cors'})
+    let location = "Auckland"
+    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=c7911001fbb406aa98e26c70ab98ec78`, {mode: 'cors'})
     .then(function(response) {
       console.log(response.json());
     });
 }
 
 
-async function getData() {
+const getData = async () => {
     try {
-        let weather = await dataInfo();
+        const weather = await dataInfo();
         console.log(weather);
+        // dataInfo();
     } catch (err) {
         console.log(err);
     }
