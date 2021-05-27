@@ -1,3 +1,6 @@
+// const getLocation = () => {
+
+// }
 
 const dataInfo = () => {
     let location = "Auckland"
