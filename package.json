@@ -1,0 +1,20 @@
+{
+  "name": "iweather",
+  "version": "1.0.0",
+  "description": "A weather forecast or outlook web application that fetches real-time data from an API and makes same available to users. Developed with Javascript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/george-shammar/iWeather.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/george-shammar/iWeather/issues"
+  },
+  "homepage": "https://github.com/george-shammar/iWeather#readme"
+}
