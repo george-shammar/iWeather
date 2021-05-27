@@ -6,6 +6,6 @@ async function getData() {
         let weather = await dataInfo();
         console.log(weather);
     } catch (err) {
-
+        console.log(err);
     }
 }
