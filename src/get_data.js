@@ -1,4 +1,7 @@
 
+const dataInfo = () => {
+    
+}
 
 
 async function getData() {
