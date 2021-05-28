@@ -16,7 +16,6 @@ const dataInfo = (location) => {
 const getData = async () => {
     try {
         const weather = await dataInfo();
-        // console.log(weather.name);
     } catch (err) {
         console.log(err);
     }

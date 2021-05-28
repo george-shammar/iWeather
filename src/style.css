@@ -21,3 +21,10 @@ body {
   padding-left: 35%;
   padding-right: 35%;
 }
+
+.weather-card {
+  position: relative;
+  text-align: center;
+  font-size: larger;
+  width: 50%;
+}
