@@ -27,9 +27,11 @@ body {
   margin-left: 20%;
   margin-right: 20%;
   height: 350px;
-  border-radius: 20%;
+  border-radius: 10%;
 }
 
 .cloud {
   font-size: 5rem;
+  color: rgb(78, 76, 76);
 }
+
