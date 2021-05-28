@@ -5,7 +5,10 @@ const dataInfo = (location) => {
        location = document.getElementById('location').value;
         fetch(`http://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=c7911001fbb406aa98e26c70ab98ec78`, {mode: 'cors'})
         .then(function(response) {
-          console.log(response.json());
+          return (response.json());
+        })
+        .then(function(response) {
+            console.log(response.main.temp);
         });
     }
 }
@@ -13,7 +16,7 @@ const dataInfo = (location) => {
 const getData = async () => {
     try {
         const weather = await dataInfo();
-        console.log(weather);
+        // console.log(weather.name);
     } catch (err) {
         console.log(err);
     }
