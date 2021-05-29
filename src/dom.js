@@ -1,6 +1,7 @@
 
 const weatherCard = () => {
     const cardContainer = document.createElement('div');
+    cardContainer.setAttribute('class', 'weather-card mt-5 border shadow');
 }
 
 
