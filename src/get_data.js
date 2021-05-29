@@ -23,11 +23,10 @@ const dataInfo = (location) => {
             const ferhButton = document.getElementById('fer');
             ferhButton.onclick = () => {
                 const mainTempFer = (mainTemp * 9/5) + 32;
-                // document.querySelector('#body').innerHTML = '';
-                weatherCard(mainTempFer, cityName, countryName, lowTemp, highTemp, humidity, pressure, description);
+                const lowTempFer = (lowTemp * 9/5) + 32;
+                const highTempFer = (highTemp * 9/5) + 32;
+                weatherCard(mainTempFer, cityName, countryName, lowTempFer, highTempFer, humidity, pressure, description);
             }
-
-           
         });
         
     }
