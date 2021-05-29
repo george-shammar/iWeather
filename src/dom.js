@@ -82,6 +82,9 @@ const weatherCard = () => {
     const cityContainer = document.createElement('div');
     cityContainer.setAttribute('class', 'd-flex justify-content-center');
     cardContainer.appendChild(cityContainer);
+
+    // main city
+    const mainCity = document.createElement('div');
 }
 
 
