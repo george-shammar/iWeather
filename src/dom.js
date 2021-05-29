@@ -140,6 +140,7 @@ const weatherCard = (mainTemp, cityName, countryName, lowTemp, highTemp, humidit
 
     // ferheihet button
     const ferButton = document.createElement('button');
+    ferButton.setAttribute('id', 'fer');
     const ferText = document.createTextNode('°F');
     ferButton.appendChild(ferText);
     buttonDiv.appendChild(ferButton)

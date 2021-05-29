@@ -19,6 +19,15 @@ const dataInfo = (location) => {
             const highTemp = Math.round((response.main.temp_max)-273);
 
             weatherCard(mainTemp, cityName, countryName, lowTemp, highTemp, humidity, pressure, description);
+
+            const ferhButton = document.getElementById('fer');
+            ferhButton.onclick = () => {
+                const mainTempFer = (mainTemp * 9/5) + 32;
+                // document.querySelector('#body').innerHTML = '';
+                weatherCard(mainTempFer, cityName, countryName, lowTemp, highTemp, humidity, pressure, description);
+            }
+
+           
         });
         
     }
@@ -28,7 +37,7 @@ const getData = async () => {
     try {
         const weather = await dataInfo();
     } catch (err) {
-        console.log(err);
+        return err;
     }
 }
 
