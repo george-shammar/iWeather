@@ -47,6 +47,21 @@ const weatherCard = () => {
     minTempValue.appendChild(minValue);
 
     dataContainer.appendChild(minTempContainer);
+
+    // humidity conatainer
+    const humidityContainer = document.createElement('div');
+
+    const minHumidity = document.createElement('h4');
+    minHumidity.setAttribute('class', 'px-3 fw-bold');
+    const minHumidityText =  document.createTextNode("Humidity");
+    minHumidity.appendChild(minHumidityText);
+
+    const minTempValue = document.createElement('h4');
+    minTempValue.setAttribute('class', 'px-5 fw-bold');
+    const minValue =  document.createTextNode("20 C");
+    minTempValue.appendChild(minValue);
+
+    dataContainer.appendChild(minTempContainer);
 }
 
 
