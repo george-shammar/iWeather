@@ -62,6 +62,21 @@ const weatherCard = () => {
     minHumidityValue.appendChild(humidityValue);
 
     dataContainer.appendChild(humidityContainer);
+
+    // pressure conatainer
+    const humidityContainer = document.createElement('div');
+
+    const minHumidity = document.createElement('h4');
+    minHumidity.setAttribute('class', 'px-3 fw-bold');
+    const minHumidityText =  document.createTextNode("Humidity");
+    minHumidity.appendChild(minHumidityText);
+
+    const minHumidityValue = document.createElement('h4');
+    minHumidityValue.setAttribute('class', 'px-5 fw-bold');
+    const humidityValue =  document.createTextNode("78%");
+    minHumidityValue.appendChild(humidityValue);
+
+    dataContainer.appendChild(humidityContainer);
 }
 
 
