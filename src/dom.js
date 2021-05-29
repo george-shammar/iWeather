@@ -119,3 +119,5 @@ const weatherCard = () => {
 
     cityContainer.appendChild(cloudContainer);
 }
+
+export default weatherCard;
