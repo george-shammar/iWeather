@@ -15,8 +15,8 @@ const dataInfo = (location) => {
             const countryName = response.sys.country;
             const humidity = response.main.humidity;
             const pressure = response.main.pressure;
-            const lowTemp = response.main.temp_min;
-            const highTemp = response.main.temp_max;
+            const lowTemp = Math.round((response.main.temp_min)-273);
+            const highTemp = Math.round((response.main.temp_max)-273);
 
             weatherCard(mainTemp, cityName, countryName, lowTemp, highTemp, humidity, pressure, description);
         });
