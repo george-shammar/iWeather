@@ -110,6 +110,12 @@ const weatherCard = () => {
     // clouds
     const cloudContainer = document.createElement('div');
     cityContainer.appendChild(cloudContainer);
+
+    const cloudParagraph = document.createElement('p');
+    cloudParagraph.setAttribute('class', 'main ps-5');
+    const cloud = document.createTextNode('Clouds');
+    cloudParagraph.appendChild(cloud);
+    cloudContainer.appendChild(cloudParagraph);
 }
 
 
