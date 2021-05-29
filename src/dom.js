@@ -101,6 +101,11 @@ const weatherCard = () => {
     const city = document.createTextNode('Accra, GH');
     cityparagraph.appendChild(city);
     mainCity.appendChild(cityparagraph);
+
+    // line
+    const line = document.createElement('div');
+    line.setAttribute('class', 'line');
+    mainCity.appendChild(line);
 }
 
 
