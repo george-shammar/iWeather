@@ -1,5 +1,5 @@
 
-const weatherCard = () => {
+const weatherCard = (mainTemp, cityName, countryName ) => {
     // card Container
     const cardContainer = document.createElement('div');
     cardContainer.setAttribute('class', 'weather-card mt-5 border shadow');
@@ -103,14 +103,14 @@ const weatherCard = () => {
     // value city
     const valueCityparagraph = document.createElement('p');
     valueCityparagraph.setAttribute('class', 'main color-white');
-    const valueCity = document.createTextNode('29 C');
+    const valueCity = document.createTextNode(mainTemp);
     valueCityparagraph.appendChild(valueCity);
     mainCity.appendChild(valueCityparagraph);
 
     // city paragraph
     const cityparagraph = document.createElement('p');
     cityparagraph.setAttribute('class', 'fs-3 color-white');
-    const city = document.createTextNode('Accra, GH');
+    const city = document.createTextNode(cityName, countryName);
     cityparagraph.appendChild(city);
     mainCity.appendChild(cityparagraph);
 
