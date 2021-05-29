@@ -32,7 +32,7 @@ const weatherCard = () => {
 
     maxTempContainer.appendChild(maxTemp);
     maxTempContainer.appendChild(maxTempValue);
-    
+
     dataContainer.appendChild(maxTempContainer);
 
 
@@ -49,6 +49,9 @@ const weatherCard = () => {
     const minValue =  document.createTextNode("20 C");
     minTempValue.appendChild(minValue);
 
+    minTempContainer.appendChild(minTemp);
+    minTempContainer.appendChild(minTempValue);
+
     dataContainer.appendChild(minTempContainer);
 
     // humidity conatainer
@@ -63,7 +66,7 @@ const weatherCard = () => {
     minHumidityValue.setAttribute('class', 'px-5 fw-bold');
     const humidityValue =  document.createTextNode("78%");
     minHumidityValue.appendChild(humidityValue);
-
+    
     dataContainer.appendChild(humidityContainer);
 
     // pressure conatainer
