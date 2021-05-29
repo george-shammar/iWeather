@@ -10,7 +10,7 @@ const dataInfo = (location) => {
         })
         .then(function(response) {
             const description = response.weather[0].description;
-            const mainTemp = response.main.temp;
+            const mainTemp = Math.round((response.main.temp)-273);
             const cityName = response.name;
             const countryName = response.sys.country;
             const humidity = response.main.humidity;

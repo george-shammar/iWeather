@@ -28,7 +28,7 @@ const weatherCard = (mainTemp, cityName, countryName, lowTemp, highTemp, humidit
 
     const maxTempValue = document.createElement('h4');
     maxTempValue.setAttribute('class', 'px-5 fw-bold');
-    const maxValue =  document.createTextNode(highTemp);
+    const maxValue =  document.createTextNode(`${highTemp}°C`);
     maxTempValue.appendChild(maxValue);
 
     maxTempContainer.appendChild(maxTemp);
@@ -47,7 +47,7 @@ const weatherCard = (mainTemp, cityName, countryName, lowTemp, highTemp, humidit
 
     const minTempValue = document.createElement('h4');
     minTempValue.setAttribute('class', 'px-5 fw-bold');
-    const minValue =  document.createTextNode(lowTemp);
+    const minValue =  document.createTextNode(`${lowTemp}°C`);
     minTempValue.appendChild(minValue);
 
     minTempContainer.appendChild(minTemp);
@@ -65,7 +65,7 @@ const weatherCard = (mainTemp, cityName, countryName, lowTemp, highTemp, humidit
 
     const minHumidityValue = document.createElement('h4');
     minHumidityValue.setAttribute('class', 'px-5 fw-bold');
-    const humidityValue =  document.createTextNode(humidity);
+    const humidityValue =  document.createTextNode(`${humidity}%`);
     minHumidityValue.appendChild(humidityValue);
 
     humidityContainer.appendChild(minHumidity);
@@ -104,7 +104,7 @@ const weatherCard = (mainTemp, cityName, countryName, lowTemp, highTemp, humidit
     // value city
     const valueCityparagraph = document.createElement('p');
     valueCityparagraph.setAttribute('class', 'main color-white');
-    const valueCity = document.createTextNode(mainTemp);
+    const valueCity = document.createTextNode(`${mainTemp}°C`);
     valueCityparagraph.appendChild(valueCity);
     mainCity.appendChild(valueCityparagraph);
 
