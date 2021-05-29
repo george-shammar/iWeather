@@ -7,14 +7,19 @@ const weatherCard = () => {
     cloudIcon.setAttribute('class', 'fas fa-cloud-sun-rain cloud');
     cardContainer.appendChild(cloudIcon);
 
+    const dataContainer = document.createElement('div');
+    dataContainer.setAttribute('class', 'd-flex justify-content-center color-font');
+
 }
 
 
 
 
 
-        // <div class="weather-card mt-5 border shadow">
-            // <i class="fas fa-cloud-sun-rain cloud"></i>
+        <div class="weather-card mt-5 border shadow">
+            <i class="fas fa-cloud-sun-rain cloud"></i>
+
+
             <div class="d-flex justify-content-center color-font">
                 <div>
                     <h4 class="px-3 fw-bold">Max-Temp</h4>
