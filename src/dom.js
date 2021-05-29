@@ -132,7 +132,7 @@ const weatherCard = (mainTemp, cityName, countryName, lowTemp, highTemp, humidit
 
     // celsius button
     const buttonDiv = document.createElement('div');
-    buttonDiv.setAttribute('class', 'd-flex');
+    buttonDiv.setAttribute('class', 'd-flex mx-5');
     const celsiusButton = document.createElement('button');
     const celText = document.createTextNode('°C');
     celsiusButton.appendChild(celText);
