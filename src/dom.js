@@ -102,14 +102,14 @@ const weatherCard = () => {
 
     // value city
     const valueCityparagraph = document.createElement('p');
-    valueCityparagraph.setAttribute('class', 'main');
+    valueCityparagraph.setAttribute('class', 'main color-white');
     const valueCity = document.createTextNode('29 C');
     valueCityparagraph.appendChild(valueCity);
     mainCity.appendChild(valueCityparagraph);
 
     // city paragraph
     const cityparagraph = document.createElement('p');
-    cityparagraph.setAttribute('class', 'fs-3');
+    cityparagraph.setAttribute('class', 'fs-3 color-white');
     const city = document.createTextNode('Accra, GH');
     cityparagraph.appendChild(city);
     mainCity.appendChild(cityparagraph);
@@ -124,7 +124,7 @@ const weatherCard = () => {
     
 
     const cloudParagraph = document.createElement('p');
-    cloudParagraph.setAttribute('class', 'main ps-5');
+    cloudParagraph.setAttribute('class', 'main ps-5 color-white');
     const cloud = document.createTextNode('Clouds');
     cloudParagraph.appendChild(cloud);
     cloudContainer.appendChild(cloudParagraph);
