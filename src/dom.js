@@ -12,6 +12,11 @@ const weatherCard = () => {
     cardContainer.appendChild(dataContainer);
 
     const maxTempContainer = document.createElement('div');
+    
+    const maxTemp = document.createElement('h4');
+    maxTemp.setAttribute('class', 'px-3 fw-bold');
+    const maxTempText =  document.createTextNode("Max-Temp");
+    maxTemp.appendChild(maxTempText);
 }
 
 
