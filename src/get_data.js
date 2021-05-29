@@ -20,6 +20,7 @@ const dataInfo = (location) => {
 
             weatherCard(mainTemp, cityName, countryName, lowTemp, highTemp, humidity, pressure, description);
 
+            // convert to fahrenheit
             const ferhButton = document.getElementById('fer');
             ferhButton.onclick = () => {
                 const mainTempFer = (mainTemp * 9/5) + 32;
@@ -31,6 +32,7 @@ const dataInfo = (location) => {
         
     }
 }
+
 
 const getData = async () => {
     try {
