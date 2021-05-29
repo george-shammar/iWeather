@@ -85,6 +85,11 @@ const weatherCard = () => {
 
     // main city
     const mainCity = document.createElement('div');
+    mainCity.setAttribute('class', 'pe-5');
+    cityContainer.appendChild(mainCity);
+
+    // value city
+    const valueCity
 }
 
 
@@ -94,7 +99,16 @@ const weatherCard = () => {
         <div class="weather-card mt-5 border shadow"> card Container
             <i class="fas fa-cloud-sun-rain cloud"></i>
 
-
+            <div class="d-flex justify-content-center">
+                <div class="pe-5">
+                    <p class="main">29</p>
+                    <p class="fs-3">Accra, GH</p>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <p class="main ps-5">Clouds</p>
+                </div>
+            </div>
             {/* <div class="d-flex justify-content-center color-font"> dataContainer
                 <div> maxTempContainer
                     <h4 class="px-3 fw-bold">Max-Temp</h4>
@@ -113,15 +127,6 @@ const weatherCard = () => {
                     <h4 class="px-5 fw-bold">1012ha</h4>
                 </div>
             </div> */}
-            <div class="d-flex justify-content-center">
-                <div class="pe-5">
-                    <p class="main">29</p>
-                    <p class="fs-3">Accra, GH</p>
-                </div>
-                <div class="line"></div>
-                <div>
-                    <p class="main ps-5">Clouds</p>
-                </div>
-            </div>
+           
            
         </div>
