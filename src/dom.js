@@ -31,6 +31,22 @@ const weatherCard = () => {
     maxTempValue.appendChild(maxValue);
 
     dataContainer.appendChild(maxTempContainer);
+
+
+    // min temperature conatainer
+    const maxTempContainer = document.createElement('div');
+
+    const maxTemp = document.createElement('h4');
+    maxTemp.setAttribute('class', 'px-3 fw-bold');
+    const maxTempText =  document.createTextNode("Max-Temp");
+    maxTemp.appendChild(maxTempText);
+
+    const maxTempValue = document.createElement('h4');
+    maxTempValue.setAttribute('class', 'px-5 fw-bold');
+    const maxValue =  document.createTextNode("20 C");
+    maxTempValue.appendChild(maxValue);
+
+    dataContainer.appendChild(maxTempContainer);
 }
 
 
