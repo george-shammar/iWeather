@@ -30,6 +30,9 @@ const weatherCard = () => {
     const maxValue =  document.createTextNode("20 C");
     maxTempValue.appendChild(maxValue);
 
+    maxTempContainer.appendChild(maxTemp);
+    maxTempContainer.appendChild(maxTempValue);
+    
     dataContainer.appendChild(maxTempContainer);
 
 
