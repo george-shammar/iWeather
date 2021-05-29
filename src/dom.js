@@ -1,6 +1,6 @@
 
 const weatherCard = () => {
-    
+    const cardContainer = document.createElement('div');
 }
 
 
