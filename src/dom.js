@@ -89,7 +89,8 @@ const weatherCard = () => {
     cityContainer.appendChild(mainCity);
 
     // value city
-    const valueCity
+    const valueCityparagraph = document.createElement('p');
+    valueCityparagraph.setAttribute('class', 'main');
 }
 
 
