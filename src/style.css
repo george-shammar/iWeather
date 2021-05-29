@@ -1,6 +1,6 @@
 body {
   background-image: url("sky.jpg");
-  background-color: #cccccc;
+  background-color: #ccc;
   height: 500px;
   background-position: center;
   background-repeat: no-repeat;
@@ -11,13 +11,13 @@ body {
   color: white;
 }
 
-.header{
+.header {
   position: relative;
   text-align: center;
   font-size: larger;
 }
 
-.loc-input  {
+.loc-input {
   padding-left: 35%;
   padding-right: 35%;
 }
