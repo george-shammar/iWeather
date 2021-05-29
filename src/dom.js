@@ -91,6 +91,14 @@ const weatherCard = () => {
     // value city
     const valueCityparagraph = document.createElement('p');
     valueCityparagraph.setAttribute('class', 'main');
+    const valueCity = document.createTextNode('29 C');
+    valueCityparagraph.appendChild(valueCity);
+
+    // city paragraph
+    const cityparagraph = document.createElement('p');
+    cityparagraph.setAttribute('class', 'fs-3');
+    const city = document.createTextNode('Accra, GH');
+    cityparagraph.appendChild(city);
 }
 
 
