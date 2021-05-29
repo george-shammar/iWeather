@@ -130,9 +130,21 @@ const weatherCard = (mainTemp, cityName, countryName, lowTemp, highTemp, humidit
     cloudParagraph.appendChild(cloud);
     cloudContainer.appendChild(cloudParagraph);
 
+    // celsius button
+    const buttonDiv = document.createElement('div');
+    buttonDiv.setAttribute('class', 'd-flex');
     const celsiusButton = document.createElement('button');
     const celText = document.createTextNode('°C');
     celsiusButton.appendChild(celText);
+    buttonDiv.appendChild(celsiusButton)
+
+    // ferheihet button
+    const ferButton = document.createElement('button');
+    const ferText = document.createTextNode('°F');
+    ferButton.appendChild(ferText);
+    buttonDiv.appendChild(ferButton)
+
+    cloudContainer.appendChild(buttonDiv);
 
     cityContainer.appendChild(cloudContainer);
 }
