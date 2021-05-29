@@ -10,6 +10,8 @@ const weatherCard = () => {
     const dataContainer = document.createElement('div');
     dataContainer.setAttribute('class', 'd-flex justify-content-center color-font');
     cardContainer.appendChild(dataContainer);
+
+    const maxTempContainer = document.createElement('div');
 }
 
 
