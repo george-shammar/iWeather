@@ -83,7 +83,7 @@ const weatherCard = (mainTemp, cityName, countryName, lowTemp, highTemp, humidit
 
     const minPressureValue = document.createElement('h4');
     minPressureValue.setAttribute('class', 'px-5 fw-bold');
-    const pressureValue =  document.createTextNode(pressure);
+    const pressureValue =  document.createTextNode(`${pressure}ha`);
     minPressureValue.appendChild(pressureValue);
 
     pressureContainer.appendChild(minPressure);
