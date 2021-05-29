@@ -85,6 +85,9 @@ const weatherCard = () => {
     const pressureValue =  document.createTextNode("101ha");
     minPressureValue.appendChild(pressureValue);
 
+    pressureContainer.appendChild(minPressure);
+    pressureContainer.appendChild(minPressureValue);
+
     dataContainer.appendChild(pressureContainer);
 
     // city container
