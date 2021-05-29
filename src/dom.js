@@ -110,7 +110,7 @@ const weatherCard = (mainTemp, cityName, countryName, lowTemp, highTemp, humidit
     // city paragraph
     const cityparagraph = document.createElement('p');
     cityparagraph.setAttribute('class', 'fs-3 color-white');
-    const city = document.createTextNode(cityName, countryName);
+    const city = document.createTextNode(`${cityName}, ${countryName}`);
     cityparagraph.appendChild(city);
     mainCity.appendChild(cityparagraph);
 
