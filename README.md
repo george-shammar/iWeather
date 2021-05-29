@@ -3,7 +3,7 @@
 
 - The application uses the openWeather API to retrieve real-time data to display to users.
 
-![screenShot](./home.png)
+![screenshot](./home.png)
 
 ## Built With
 - Javascript.
