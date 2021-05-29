@@ -106,6 +106,11 @@ const weatherCard = () => {
     const line = document.createElement('div');
     line.setAttribute('class', 'line');
     cityContainer.appendChild(line);
+
+    // clouds
+    const cloudContainer = document.createElement('div');
+    mainCity.setAttribute('class', 'pe-5');
+    cityContainer.appendChild(mainCity);
 }
 
 
