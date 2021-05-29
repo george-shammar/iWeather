@@ -36,7 +36,7 @@ const weatherCard = () => {
     // min temperature conatainer
     const minTempContainer = document.createElement('div');
 
-    const maxTemp = document.createElement('h4');
+    const minTemp = document.createElement('h4');
     maxTemp.setAttribute('class', 'px-3 fw-bold');
     const maxTempText =  document.createTextNode("Max-Temp");
     maxTemp.appendChild(maxTempText);
