@@ -1,16 +1,20 @@
 
 const weatherCard = () => {
+    // card Container
     const cardContainer = document.createElement('div');
     cardContainer.setAttribute('class', 'weather-card mt-5 border shadow');
 
+    // cloud icon
     const cloudIcon = document.createElement('i');
     cloudIcon.setAttribute('class', 'fas fa-cloud-sun-rain cloud');
     cardContainer.appendChild(cloudIcon);
 
+    // data Container
     const dataContainer = document.createElement('div');
     dataContainer.setAttribute('class', 'd-flex justify-content-center color-font');
     cardContainer.appendChild(dataContainer);
 
+    // max temperature conatainer
     const maxTempContainer = document.createElement('div');
 
     const maxTemp = document.createElement('h4');
