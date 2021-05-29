@@ -77,17 +77,20 @@ const weatherCard = () => {
     minPressureValue.appendChild(pressureValue);
 
     dataContainer.appendChild(pressureContainer);
+
+    // city container
+    const cityContainer = document.createElement('div');
 }
 
 
 
 
 
-        <div class="weather-card mt-5 border shadow">
+        <div class="weather-card mt-5 border shadow"> card Container
             <i class="fas fa-cloud-sun-rain cloud"></i>
 
 
-            <div class="d-flex justify-content-center color-font"> dataContainer
+            {/* <div class="d-flex justify-content-center color-font"> dataContainer
                 <div> maxTempContainer
                     <h4 class="px-3 fw-bold">Max-Temp</h4>
                     <h4 class="px-5 fw-bold">20</h4>
@@ -104,7 +107,7 @@ const weatherCard = () => {
                     <h4 class="px-3 fw-bold">Pressure</h4>
                     <h4 class="px-5 fw-bold">1012ha</h4>
                 </div>
-            </div>
+            </div> */}
             <div class="d-flex justify-content-center">
                 <div class="pe-5">
                     <p class="main">29</p>
