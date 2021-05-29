@@ -10,14 +10,15 @@ const dataInfo = (location) => {
         })
         .then(function(response) {
             // console.log(response);
-            console.log(response.main.temp);
-            console.log(response.name, response.sys.country);
-            console.log(response.main.humidity);
-            console.log(response.main.pressure);
-            console.log(response.main.temp_min);
-            console.log(response.main.temp_max);
+            const mainTemp = response.main.temp;
+            const cityName = response.name;
+            const countryName = response.sys.country;
+            const humidity = response.main.humidity;
+            const pressure = response.main.pressure;
+            const lowTemp = response.main.temp_min;
+            const highTemp = response.main.temp_max;
         });
-        // weatherCard();
+        // weatherCard(mainTemp, cityName, countryName, lowTemp, highTemp, humidity, pressure);
     }
 }
 
