@@ -4,6 +4,9 @@ const weatherCard = () => {
     const cardContainer = document.createElement('div');
     cardContainer.setAttribute('class', 'weather-card mt-5 border shadow');
 
+    const body = document.getElementById('body');
+    body.appendChild(cardContainer);
+
     // cloud icon
     const cloudIcon = document.createElement('i');
     cloudIcon.setAttribute('class', 'fas fa-cloud-sun-rain cloud');
