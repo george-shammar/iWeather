@@ -12,11 +12,18 @@ const weatherCard = () => {
     cardContainer.appendChild(dataContainer);
 
     const maxTempContainer = document.createElement('div');
-    
+
     const maxTemp = document.createElement('h4');
     maxTemp.setAttribute('class', 'px-3 fw-bold');
     const maxTempText =  document.createTextNode("Max-Temp");
     maxTemp.appendChild(maxTempText);
+
+    const maxTempValue = document.createElement('h4');
+    maxTempValue.setAttribute('class', 'px-5 fw-bold');
+    const maxValue =  document.createTextNode("20 C");
+    maxTempValue.appendChild(maxValue);
+
+    dataContainer.appendChild(maxTempContainer);
 }
 
 
@@ -27,8 +34,8 @@ const weatherCard = () => {
             <i class="fas fa-cloud-sun-rain cloud"></i>
 
 
-            <div class="d-flex justify-content-center color-font">
-                <div>
+            <div class="d-flex justify-content-center color-font"> dataContainer
+                <div> maxTempContainer
                     <h4 class="px-3 fw-bold">Max-Temp</h4>
                     <h4 class="px-5 fw-bold">20</h4>
                 </div>
