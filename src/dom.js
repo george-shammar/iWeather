@@ -1,5 +1,5 @@
 
-const weatherCard = (mainTemp, cityName, countryName ) => {
+const weatherCard = (mainTemp, cityName, countryName, lowTemp, highTemp, humidity, pressure) => {
     // card Container
     const cardContainer = document.createElement('div');
     cardContainer.setAttribute('class', 'weather-card mt-5 border shadow');
@@ -27,7 +27,7 @@ const weatherCard = (mainTemp, cityName, countryName ) => {
 
     const maxTempValue = document.createElement('h4');
     maxTempValue.setAttribute('class', 'px-5 fw-bold');
-    const maxValue =  document.createTextNode("20 C");
+    const maxValue =  document.createTextNode(highTemp);
     maxTempValue.appendChild(maxValue);
 
     maxTempContainer.appendChild(maxTemp);
@@ -46,7 +46,7 @@ const weatherCard = (mainTemp, cityName, countryName ) => {
 
     const minTempValue = document.createElement('h4');
     minTempValue.setAttribute('class', 'px-5 fw-bold');
-    const minValue =  document.createTextNode("20 C");
+    const minValue =  document.createTextNode(lowTemp);
     minTempValue.appendChild(minValue);
 
     minTempContainer.appendChild(minTemp);
@@ -64,7 +64,7 @@ const weatherCard = (mainTemp, cityName, countryName ) => {
 
     const minHumidityValue = document.createElement('h4');
     minHumidityValue.setAttribute('class', 'px-5 fw-bold');
-    const humidityValue =  document.createTextNode("78%");
+    const humidityValue =  document.createTextNode(humidity);
     minHumidityValue.appendChild(humidityValue);
 
     humidityContainer.appendChild(minHumidity);
@@ -82,7 +82,7 @@ const weatherCard = (mainTemp, cityName, countryName ) => {
 
     const minPressureValue = document.createElement('h4');
     minPressureValue.setAttribute('class', 'px-5 fw-bold');
-    const pressureValue =  document.createTextNode("101ha");
+    const pressureValue =  document.createTextNode(pressure);
     minPressureValue.appendChild(pressureValue);
 
     pressureContainer.appendChild(minPressure);
