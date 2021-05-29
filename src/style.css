@@ -39,6 +39,10 @@ body {
   font-size: 5rem;
 }
 
+.main-desc {
+  font-size: 4rem;
+}
+
 .line {
   border-left: solid whitesmoke;
   margin-bottom: 15px;

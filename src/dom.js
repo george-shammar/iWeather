@@ -1,5 +1,5 @@
 
-const weatherCard = (mainTemp, cityName, countryName, lowTemp, highTemp, humidity, pressure) => {
+const weatherCard = (mainTemp, cityName, countryName, lowTemp, highTemp, humidity, pressure, description) => {
     document.querySelector('#body').innerHTML = '';
     // card Container
     const cardContainer = document.createElement('div');
@@ -125,8 +125,8 @@ const weatherCard = (mainTemp, cityName, countryName, lowTemp, highTemp, humidit
     
 
     const cloudParagraph = document.createElement('p');
-    cloudParagraph.setAttribute('class', 'main ps-5 color-white');
-    const cloud = document.createTextNode('Clouds');
+    cloudParagraph.setAttribute('class', 'main-desc ps-5 color-white');
+    const cloud = document.createTextNode(description);
     cloudParagraph.appendChild(cloud);
     cloudContainer.appendChild(cloudParagraph);
 

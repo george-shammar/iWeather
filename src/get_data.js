@@ -9,7 +9,7 @@ const dataInfo = (location) => {
           return (response.json());
         })
         .then(function(response) {
-            // console.log(response.sys.country);
+            const description = response.weather[0].description;
             const mainTemp = response.main.temp;
             const cityName = response.name;
             const countryName = response.sys.country;
@@ -18,7 +18,7 @@ const dataInfo = (location) => {
             const lowTemp = response.main.temp_min;
             const highTemp = response.main.temp_max;
 
-            weatherCard(mainTemp, cityName, countryName, lowTemp, highTemp, humidity, pressure);
+            weatherCard(mainTemp, cityName, countryName, lowTemp, highTemp, humidity, pressure, description);
         });
         
     }
