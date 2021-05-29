@@ -130,6 +130,10 @@ const weatherCard = (mainTemp, cityName, countryName, lowTemp, highTemp, humidit
     cloudParagraph.appendChild(cloud);
     cloudContainer.appendChild(cloudParagraph);
 
+    const celsiusButton = document.createElement('button');
+    const celText = document.createTextNode('°C');
+    celsiusButton.appendChild(celText);
+
     cityContainer.appendChild(cloudContainer);
 }
 
