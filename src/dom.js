@@ -1,5 +1,6 @@
 
 const weatherCard = (mainTemp, cityName, countryName, lowTemp, highTemp, humidity, pressure) => {
+    document.querySelector('#body').innerHTML = '';
     // card Container
     const cardContainer = document.createElement('div');
     cardContainer.setAttribute('class', 'weather-card mt-5 border shadow');
