@@ -71,12 +71,12 @@ const weatherCard = () => {
     const minPressureText =  document.createTextNode("Pressure");
     minPressure.appendChild(minPressureText);
 
-    const minHumidityValue = document.createElement('h4');
-    minHumidityValue.setAttribute('class', 'px-5 fw-bold');
-    const humidityValue =  document.createTextNode("78%");
-    minHumidityValue.appendChild(humidityValue);
+    const minPressureValue = document.createElement('h4');
+    minPressureValue.setAttribute('class', 'px-5 fw-bold');
+    const pressureValue =  document.createTextNode("101ha");
+    minPressureValue.appendChild(pressureValue);
 
-    dataContainer.appendChild(humidityContainer);
+    dataContainer.appendChild(pressureContainer);
 }
 
 
