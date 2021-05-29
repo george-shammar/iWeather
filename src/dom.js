@@ -105,7 +105,7 @@ const weatherCard = () => {
     // line
     const line = document.createElement('div');
     line.setAttribute('class', 'line');
-    mainCity.appendChild(line);
+    cityContainer.appendChild(line);
 }
 
 
