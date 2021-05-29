@@ -66,7 +66,10 @@ const weatherCard = () => {
     minHumidityValue.setAttribute('class', 'px-5 fw-bold');
     const humidityValue =  document.createTextNode("78%");
     minHumidityValue.appendChild(humidityValue);
-    
+
+    humidityContainer.appendChild(minHumidity);
+    humidityContainer.appendChild(minHumidityValue);
+
     dataContainer.appendChild(humidityContainer);
 
     // pressure conatainer
