@@ -3,6 +3,14 @@ import {error, weatherCard} from './dom';
 const buttonDiv = document.querySelector('.button-div');
 buttonDiv.style.display = 'none';
 
+const bgOne = document.querySelector('.body-one');
+// const bgTwo = document.querySelector('.body-two');
+// const bgThree = document.querySelector('.body-three');
+// bgOne.style.display = 'block';
+// bgTwo.style.display = 'none';
+// bgThree.style.display = 'none';
+
+
 const dataInfo = (location) => {
 const submitButton = document.getElementById('submit');
 
@@ -63,10 +71,14 @@ const convertToCelsius = (temp) => {
 
 
 const changeBackground = (temp) => {
-  if(temp < 20) {
-    // document.body.style.backgroundImage = 'none'; //'url("cloud.jpg")';
-    const card = document.querySelector('#body');
-    card.style.backgroundImage = 'url("cloud.jpg")';
+  if (temp < 20) {
+    bgOne.style.backgroundImage = 'url("cold.jpg")';
+  } else if (temp >= 20 < 25) {
+    bgOne.style.backgroundImage = 'url("cloud.jpg")';
+  } else if (temp >= 25 < 30) {
+    bgOne.style.backgroundImage = 'url("blue_sky.jpg")';
+  } else {
+    bgOne.style.backgroundImage = 'url("desert.jpg")';
   }
 }
 
