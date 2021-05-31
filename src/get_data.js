@@ -25,21 +25,19 @@ const dataInfo = (location) => {
           const temp = convertToFerhenheit(mainTemp);
           const high = convertToFerhenheit(highTemp);
           const low = convertToFerhenheit(lowTemp);
-          document.getElementById('main-temp').innerHTML = temp;
-          document.getElementById('low-temp').innerHTML = low;
-          document.getElementById('high-temp').innerHTML = high;
+          document.getElementById('main-temp').innerHTML = `${temp}°F`;
+          document.getElementById('low-temp').innerHTML =`${low}°F`;
+          document.getElementById('high-temp').innerHTML = `${high}°F`;
         }
         
         document.getElementById('c').onclick = () => {
           const temp = convertToCelsius(mainTemp);
           const high = convertToCelsius(highTemp);
           const low = convertToCelsius(lowTemp);
-          document.getElementById('main-temp').innerHTML = temp;
-          document.getElementById('low-temp').innerHTML = low;
-          document.getElementById('high-temp').innerHTML = high;
+          document.getElementById('main-temp').innerHTML = `${temp}°C`;
+          document.getElementById('low-temp').innerHTML = `${low}°C`;
+          document.getElementById('high-temp').innerHTML =`${temp}°C`;
         }
-
-
       }).catch((err) => {
         document.querySelector('#body').innerHTML = '';
         return error();
@@ -47,10 +45,6 @@ const dataInfo = (location) => {
       document.getElementById('error').innerHTML = '';
   };
 };
-
-
- 
-
 
 const convertToFerhenheit = (temp) => {
   return (Math.round((temp) * 9/5 + 32));

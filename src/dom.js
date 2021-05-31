@@ -30,7 +30,7 @@ const weatherCard = (mainTemp, cityName, countryName, lowTemp, highTemp,
   const maxTempValue = document.createElement('h4');
   maxTempValue.setAttribute('class', 'px-5 fw-bold');
   maxTempValue.setAttribute('id', 'high-temp');
-  const maxValue = document.createTextNode(`${highTemp}°`);
+  const maxValue = document.createTextNode(`${highTemp}°C`);
   maxTempValue.appendChild(maxValue);
 
   maxTempContainer.appendChild(maxTemp);
@@ -50,7 +50,7 @@ const weatherCard = (mainTemp, cityName, countryName, lowTemp, highTemp,
   const minTempValue = document.createElement('h4');
   minTempValue.setAttribute('class', 'px-5 fw-bold');
   minTempValue.setAttribute('id', 'low-temp');
-  const minValue = document.createTextNode(`${lowTemp}°`);
+  const minValue = document.createTextNode(`${lowTemp}°C`);
   minTempValue.appendChild(minValue);
 
   minTempContainer.appendChild(minTemp);
@@ -108,7 +108,7 @@ const weatherCard = (mainTemp, cityName, countryName, lowTemp, highTemp,
   const valueCityparagraph = document.createElement('p');
   valueCityparagraph.setAttribute('class', 'main color-white');
   valueCityparagraph.setAttribute('id', 'main-temp');
-  const valueCity = document.createTextNode(`${mainTemp}°`);
+  const valueCity = document.createTextNode(`${mainTemp}°C`);
   valueCityparagraph.appendChild(valueCity);
   mainCity.appendChild(valueCityparagraph);
 
@@ -133,37 +133,6 @@ const weatherCard = (mainTemp, cityName, countryName, lowTemp, highTemp,
   const cloud = document.createTextNode(description);
   cloudParagraph.appendChild(cloud);
   cloudContainer.appendChild(cloudParagraph);
-
-  
-  // const buttonDiv = document.createElement('div');
-  // buttonDiv.setAttribute('class', 'd-flex mx-5');
-
-    // // create toggle button
-    // const toggleLabel = document.createElement('label');
-    // toggleLabel.setAttribute('class', 'switch');
-    // // toggleLabel.setAttribute('id', 'toggle');
-    // buttonDiv.appendChild(toggleLabel);
-
-    // const input = document.createElement('input');
-    // input.setAttribute('type', 'checkbox');
-    // toggleLabel.appendChild(input);
-
-    // const span = document.createElement('span');
-    // span.setAttribute('class', 'slider round');
-    // toggleLabel.appendChild(span);
-
-    // const div = document.createElement('div');
-    // span.appendChild(div);
-
-    // const spanTextOne = document.createElement('span');
-    // spanTextOne.innerHTML = '°C';
-    // const spanTextTwo = document.createElement('span');
-    // spanTextTwo.innerHTML = '°F';
-    // div.appendChild(spanTextOne);
-    // div.appendChild(spanTextTwo);
-
-
-  // cloudContainer.appendChild(buttonDiv);
 
   cityContainer.appendChild(cloudContainer);
 };
