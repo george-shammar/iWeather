@@ -1,5 +1,8 @@
 import {error, weatherCard} from './dom';
 
+const buttonDiv = document.querySelector('.button-div');
+buttonDiv.style.display = 'none';
+
 const dataInfo = (location) => {
   const submitButton = document.getElementById('submit');
 
@@ -19,6 +22,7 @@ const dataInfo = (location) => {
 
         weatherCard(mainTemp, cityName, countryName, lowTemp,
           highTemp, humidity, pressure, description);
+          buttonDiv.style.display = 'block';
 
         // convert temp units
         document.getElementById('f').onclick = () => {
