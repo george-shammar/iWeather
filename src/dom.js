@@ -148,5 +148,8 @@ const weatherCard = (mainTemp, cityName, countryName, lowTemp, highTemp,
   cityContainer.appendChild(cloudContainer);
 };
 
+const error = () => {
+  const errorDiv = document.getElementById('error');
+}
 
 export default weatherCard;
