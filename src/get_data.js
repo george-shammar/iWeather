@@ -33,6 +33,7 @@ const dataInfo = (location) => {
       }).catch((err) => {
         return error();
       });
+      document.getElementById('error').innerHTML = '';
   };
 };
 
@@ -42,7 +43,7 @@ const getData = async () => {
     const weather = await dataInfo();
     return weather;
   } catch(err) {
-    
+
   }
 };
 
