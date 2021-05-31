@@ -9,16 +9,35 @@ const dataInfo = (location) => {
       .then((response) => (response.json()))
       .then((response) => {
         const { description } = response.weather[0];
-        const mainTemp = response.main.temp;
+        const mainTemp = Math.round((response.main.temp)-273.15);
         const cityName = response.name;
         const countryName = response.sys.country;
         const { humidity } = response.main;
         const { pressure } = response.main;
-        const lowTemp = response.main.temp_min;
-        const highTemp = response.main.temp_max;
+        const lowTemp = Math.round((response.main.temp_min)-273.15);
+        const highTemp = Math.round((response.main.temp_max)-273.15);
 
         weatherCard(mainTemp, cityName, countryName, lowTemp,
           highTemp, humidity, pressure, description);
+
+        // convert temp units
+        document.getElementById('f').onclick = () => {
+          const temp = convertToFerhenheit(mainTemp);
+          const high = convertToFerhenheit(highTemp);
+          const low = convertToFerhenheit(lowTemp);
+          document.getElementById('main-temp').innerHTML = temp;
+          document.getElementById('low-temp').innerHTML = low;
+          document.getElementById('high-temp').innerHTML = high;
+        }
+        
+        document.getElementById('c').onclick = () => {
+          const temp = convertToCelsius(mainTemp);
+          const high = convertToCelsius(highTemp);
+          const low = convertToCelsius(lowTemp);
+          document.getElementById('main-temp').innerHTML = temp;
+          document.getElementById('low-temp').innerHTML = low;
+          document.getElementById('high-temp').innerHTML = high;
+        }
 
 
       }).catch((err) => {
@@ -34,16 +53,12 @@ const dataInfo = (location) => {
 
 
 const convertToFerhenheit = (temp) => {
-  return (Math.round((temp - 273.15) * 9/5 + 32));
+  return (Math.round((temp) * 9/5 + 32));
 }
 
 const convertToCelsius = (temp) => {
-  return (Math.round(temp - 273.15));
+  return Math.round(temp);
 }
-
-
-
-
 
 
 
@@ -59,19 +74,4 @@ const getData = async () => {
 
 export default getData;
 
- // // convert to fahrenheit
 
-        // const ferhButton = document.getElementById('fer');
-        // ferhButton.onclick = () => {
-        //   const mainTempFer = Math.round((mainTemp * (9 / 5)) + 32);
-        //   const lowTempFer = Math.round((lowTemp * (9 / 5)) + 32);
-        //   const highTempFer = Math.round((highTemp * (9 / 5)) + 32);
-        //   weatherCard(mainTempFer, cityName, countryName, lowTempFer,
-        //     highTempFer, humidity, pressure, description);
-        // };
-        // // convert to celcius
-        // const celButton = document.getElementById('cel');
-        // celButton.onclick = {
-        //   weatherCard(mainTemp, cityName, countryName, lowTemp,
-        //     highTemp, humidity, pressure, description);
-        // }
