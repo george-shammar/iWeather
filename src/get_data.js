@@ -17,13 +17,6 @@ const dataInfo = (location) => {
         const lowTemp = Math.round((response.main.temp_min) - 273);
         const highTemp = Math.round((response.main.temp_max) - 273);
 
-        // change background
-        // if(mainTemp < 20) {
-        //   const bgBody = document.getElementById('body-body');
-        //   bgBody.style.backgroundImage = "url('cloud.jpg')";
-        //   console.log('its working');
-        // }
-
         weatherCard(mainTemp, cityName, countryName, lowTemp,
           highTemp, humidity, pressure, description);
 
@@ -52,6 +45,28 @@ const dataInfo = (location) => {
       document.getElementById('error').innerHTML = '';
   };
 };
+
+
+ 
+
+
+const convertToFerhenheit = (temp) => {
+  return (Math.round((temp - 273.15) * 9/5 + 32));
+}
+
+const convertToCelsius = (temp) => {
+  
+}
+
+
+
+
+
+
+
+
+
+
 
 
 const getData = async () => {
