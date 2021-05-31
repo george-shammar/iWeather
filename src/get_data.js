@@ -18,10 +18,11 @@ const dataInfo = (location) => {
         const highTemp = Math.round((response.main.temp_max) - 273);
 
         // change background
-        if(mainTemp < 20) {
-          const bgBody = document.getElementById('body-body');
-          bgBody.style.backgroundImage = "url('cloud.jpg') no-repeat center cover 500px";
-        }
+        // if(mainTemp < 20) {
+        //   const bgBody = document.getElementById('body-body');
+        //   bgBody.style.backgroundImage = "url('cloud.jpg')";
+        //   console.log('its working');
+        // }
 
         weatherCard(mainTemp, cityName, countryName, lowTemp,
           highTemp, humidity, pressure, description);
@@ -36,6 +37,14 @@ const dataInfo = (location) => {
           weatherCard(mainTempFer, cityName, countryName, lowTempFer,
             highTempFer, humidity, pressure, description);
         };
+        // convert to celcius
+        const celButton = document.getElementById('cel');
+        celButton.onclick = {
+          weatherCard(mainTemp, cityName, countryName, lowTemp,
+            highTemp, humidity, pressure, description);
+        }
+
+
       }).catch((err) => {
         document.querySelector('#body').innerHTML = '';
         return error();
@@ -46,12 +55,8 @@ const dataInfo = (location) => {
 
 
 const getData = async () => {
-  try {
     const weather = await dataInfo();
     return weather;
-  } catch(err) {
-    return err;
-  }
 };
 
 export default getData;

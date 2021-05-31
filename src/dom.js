@@ -131,7 +131,7 @@ const weatherCard = (mainTemp, cityName, countryName, lowTemp, highTemp,
   cloudParagraph.appendChild(cloud);
   cloudContainer.appendChild(cloudParagraph);
 
-  // celsius button
+  
   const buttonDiv = document.createElement('div');
   buttonDiv.setAttribute('class', 'd-flex mx-5');
 
@@ -142,6 +142,13 @@ const weatherCard = (mainTemp, cityName, countryName, lowTemp, highTemp,
   const ferText = document.createTextNode('°F');
   ferButton.appendChild(ferText);
   buttonDiv.appendChild(ferButton);
+
+  // celcius button
+  const celButton = document.createElement('button');
+  celButton.setAttribute('id', 'cel');
+  const celText = document.createTextNode('°C');
+  celButton.appendChild(celText);
+  buttonDiv.appendChild(celButton);
 
   cloudContainer.appendChild(buttonDiv);
 
