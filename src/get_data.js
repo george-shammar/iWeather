@@ -30,6 +30,8 @@ const dataInfo = (location) => {
           weatherCard(mainTempFer, cityName, countryName, lowTempFer,
             highTempFer, humidity, pressure, description);
         };
+      }).catch((err) => {
+        return error();
       });
   };
 };
@@ -39,8 +41,8 @@ const getData = async () => {
   try {
     const weather = await dataInfo();
     return weather;
-  } catch (err) {
-    return error();
+  } catch(err) {
+    
   }
 };
 
