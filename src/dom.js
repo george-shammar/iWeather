@@ -145,7 +145,18 @@ const weatherCard = (mainTemp, cityName, countryName, lowTemp, highTemp,
     toggleLabel.appendChild(input);
 
     const span = document.createElement('span');
-    
+    span.setAttribute('class', 'slider round');
+    toggleLabel.appendChild(span);
+
+    const div = document.createElement('div');
+    span.appendChild(div);
+
+    const spanTextOne = document.createElement('span');
+    spanTextOne.innerHTML = '°C';
+    const spanTextTwo = document.createElement('span');
+    spanTextTwo.innerHTML = '°F';
+    div.appendChild(spanTextOne);
+    div.appendChild(spanTextTwo);
 
 
 
