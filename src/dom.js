@@ -135,20 +135,12 @@ const weatherCard = (mainTemp, cityName, countryName, lowTemp, highTemp,
   const buttonDiv = document.createElement('div');
   buttonDiv.setAttribute('class', 'd-flex mx-5');
 
+    // create toggle button
+    const toggleLabel = document.createElement('label');
+    toggleLabel.setAttribute('class', 'switch');
 
-  // ferheihet button
-  const ferButton = document.createElement('button');
-  ferButton.setAttribute('id', 'fer');
-  const ferText = document.createTextNode('°F');
-  ferButton.appendChild(ferText);
-  buttonDiv.appendChild(ferButton);
 
-  // celcius button
-  const celButton = document.createElement('button');
-  celButton.setAttribute('id', 'cel');
-  const celText = document.createTextNode('°C');
-  celButton.appendChild(celText);
-  buttonDiv.appendChild(celButton);
+
 
   cloudContainer.appendChild(buttonDiv);
 
