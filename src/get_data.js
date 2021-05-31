@@ -1,4 +1,4 @@
-import weatherCard from './dom';
+import {error, weatherCard} from './dom';
 
 const dataInfo = (location) => {
   const submitButton = document.getElementById('submit');
