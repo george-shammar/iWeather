@@ -150,7 +150,8 @@ const weatherCard = (mainTemp, cityName, countryName, lowTemp, highTemp,
 
 const error = () => {
   const errorDiv = document.getElementById('error');
-  const errorText = document.createTextNode('Please enter a valid city or check your spelling.')
+  const errorText = document.createTextNode('Please enter a valid city or check your spelling.');
+  errorDiv.appendChild(errorText);
 }
 
-export default weatherCard;
+export {error, weatherCard};
