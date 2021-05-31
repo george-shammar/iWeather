@@ -40,7 +40,7 @@ const getData = async () => {
     const weather = await dataInfo();
     return weather;
   } catch (err) {
-    return err;
+    return error();
   }
 };
 
