@@ -139,6 +139,9 @@ const weatherCard = (mainTemp, cityName, countryName, lowTemp, highTemp,
     const toggleLabel = document.createElement('label');
     toggleLabel.setAttribute('class', 'switch');
 
+    const input = document.createElement('input');
+    input.setAttribute('type', 'checkbox');
+
 
 
 
