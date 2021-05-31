@@ -31,6 +31,7 @@ const dataInfo = (location) => {
             highTempFer, humidity, pressure, description);
         };
       }).catch((err) => {
+        document.querySelector('#body').innerHTML = '';
         return error();
       });
       document.getElementById('error').innerHTML = '';
