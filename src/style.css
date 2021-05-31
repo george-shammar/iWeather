@@ -52,3 +52,7 @@ body {
 .color-font {
   color: rgb(38, 38, 39);
 }
+
+.color-red {
+  color: red;
+}
