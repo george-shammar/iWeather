@@ -4,7 +4,7 @@ const buttonDiv = document.querySelector('.button-div');
 buttonDiv.style.display = 'none';
 
 const dataInfo = (location) => {
-  const submitButton = document.getElementById('submit');
+const submitButton = document.getElementById('submit');
 
   submitButton.onclick = () => {
     location = document.getElementById('location').value;
@@ -23,6 +23,8 @@ const dataInfo = (location) => {
         weatherCard(mainTemp, cityName, countryName, lowTemp,
           highTemp, humidity, pressure, description);
           buttonDiv.style.display = 'block';
+        
+        changeBackground(mainTemp);
 
         // convert temp units
         document.getElementById('f').onclick = () => {
@@ -60,7 +62,13 @@ const convertToCelsius = (temp) => {
 
 
 
-
+const changeBackground = (temp) => {
+  if(temp < 20) {
+    // document.body.style.backgroundImage = 'none'; //'url("cloud.jpg")';
+    const card = document.querySelector('#body');
+    card.style.backgroundImage = 'url("cloud.jpg")';
+  }
+}
 
 
 

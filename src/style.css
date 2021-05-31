@@ -1,10 +1,35 @@
-#body-body {
+.body-one {
   background-image: url("sky.jpg");
   height: 500px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.body-two {
+  background-image: url("cold.jpg");
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.body-three {
+  background-image: url("cloud.jpg");
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.body-four {
+  background-image: url("blue_sky.jpg");
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 .color-white {
   color: white;
