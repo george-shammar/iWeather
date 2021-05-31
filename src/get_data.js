@@ -17,6 +17,12 @@ const dataInfo = (location) => {
         const lowTemp = Math.round((response.main.temp_min) - 273);
         const highTemp = Math.round((response.main.temp_max) - 273);
 
+        // change background
+        if(mainTemp < 20) {
+          const bgBody = document.getElementById('body-body');
+          bgBody.style.backgroundImage = "url('cloud.jpg') no-repeat center cover 500px";
+        }
+
         weatherCard(mainTemp, cityName, countryName, lowTemp,
           highTemp, humidity, pressure, description);
 
@@ -44,7 +50,7 @@ const getData = async () => {
     const weather = await dataInfo();
     return weather;
   } catch(err) {
-
+    return err;
   }
 };
 
