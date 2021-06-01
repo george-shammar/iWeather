@@ -1,14 +1,10 @@
+import './style.css';
 import {error, weatherCard} from './dom';
 
 const buttonDiv = document.querySelector('.button-div');
 buttonDiv.style.display = 'none';
 
 const bgOne = document.querySelector('.body-one');
-// const bgTwo = document.querySelector('.body-two');
-// const bgThree = document.querySelector('.body-three');
-// bgOne.style.display = 'block';
-// bgTwo.style.display = 'none';
-// bgThree.style.display = 'none';
 
 
 const dataInfo = (location) => {
@@ -32,8 +28,8 @@ const submitButton = document.getElementById('submit');
           highTemp, humidity, pressure, description);
           buttonDiv.style.display = 'block';
         
-        changeBackground(mainTemp);
-
+          changeBackground(mainTemp);
+          
         // convert temp units
         document.getElementById('f').onclick = () => {
           const temp = convertToFerhenheit(mainTemp);
@@ -69,16 +65,15 @@ const convertToCelsius = (temp) => {
 }
 
 
-
 const changeBackground = (temp) => {
   if (temp < 20) {
-    bgOne.style.backgroundImage = 'url("cold.jpg")';
+    bgOne.style.backgroundColor = 'rgb(137, 202, 153)';
   } else if (temp >= 20 < 25) {
-    bgOne.style.backgroundImage = 'url("cloud.jpg")';
+    bgOne.style.backgroundColor = 'rgb(141, 87, 211)';
   } else if (temp >= 25 < 30) {
-    bgOne.style.backgroundImage = 'url("blue_sky.jpg")';
+    bgOne.style.backgroundColor = 'rgb(214, 184, 129)';
   } else {
-    bgOne.style.backgroundImage = 'url("desert.jpg")';
+    bgOne.style.backgroundColor = 'rgb(222, 165, 236)';
   }
 }
 

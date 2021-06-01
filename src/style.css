@@ -1,21 +1,5 @@
 .body-one {
-  background-image: url("sky.jpg");
-  height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.body-two {
-  background-image: url("cold.jpg");
-  height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.body-three {
-  background-image: url("cloud.jpg");
+  background-color: cadetblue;
   height: 500px;
   background-position: center;
   background-repeat: no-repeat;
