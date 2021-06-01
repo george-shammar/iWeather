@@ -1,0 +1,39 @@
+{
+  "name": "iweather",
+  "version": "1.0.0",
+  "description": "A weather forecast or outlook web application that fetches real-time data from an API and makes same available to users. Developed with Javascript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development",
+    "watch": "webpack --watch",
+    "build": "webpack --mode production",
+    "start": "webpack serve --mode development --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/george-shammar/iWeather.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/george-shammar/iWeather/issues"
+  },
+  "homepage": "https://github.com/george-shammar/iWeather#readme",
+  "devDependencies": {
+    "babel-eslint": "10.1.x",
+    "css-loader": "^5.2.6",
+    "eslint": "6.8.x",
+    "eslint-config-airbnb-base": "14.1.x",
+    "eslint-plugin-import": "2.20.x",
+    "style-loader": "^2.0.0",
+    "stylelint": "13.3.x",
+    "stylelint-config-standard": "20.0.x",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "3.17.x",
+    "webpack": "^5.38.0",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}

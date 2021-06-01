@@ -1,0 +1,61 @@
+.body-one {
+  background-color: cadetblue;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.color-white {
+  color: white;
+}
+
+.color-blue {
+  color: blue;
+}
+
+.header {
+  position: relative;
+  text-align: center;
+  font-size: larger;
+}
+
+.loc-input {
+  padding-left: 35%;
+  padding-right: 35%;
+}
+
+.weather-card {
+  position: relative;
+  margin-left: 20%;
+  margin-right: 20%;
+  height: 350px;
+  border-radius: 10%;
+}
+
+.cloud {
+  font-size: 5rem;
+  color: rgb(78, 76, 76);
+}
+
+.main {
+  font-size: 5rem;
+}
+
+.main-desc {
+  font-size: 3.5rem;
+}
+
+.line {
+  border-left: solid whitesmoke;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+.color-font {
+  color: rgb(38, 38, 39);
+}
+
+.color-red {
+  color: red;
+}
