@@ -66,12 +66,12 @@ const convertToCelsius = (temp) => {
 
 
 const changeBackground = (temp) => {
-  if (temp < 20) {
+  if (temp <= 20) {
     bgOne.style.backgroundColor = 'rgb(137, 202, 153)';
-  } else if (temp >= 20 < 25) {
+  } else if (temp > 20 <= 25) {
     bgOne.style.backgroundColor = 'rgb(141, 87, 211)';
-  } else if (temp >= 25 < 30) {
-    bgOne.style.backgroundColor = 'rgb(214, 184, 129)';
+  } else if (temp > 25 <= 30) {
+    bgOne.style.backgroundColor = 'rgb(7, 184, 190)';
   } else {
     bgOne.style.backgroundColor = 'rgb(222, 165, 236)';
   }
