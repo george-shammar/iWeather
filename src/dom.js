@@ -1,4 +1,3 @@
-
 const weatherCard = (mainTemp, cityName, countryName, lowTemp, highTemp,
   humidity, pressure, description) => {
   document.querySelector('#body').innerHTML = '';
@@ -37,7 +36,6 @@ const weatherCard = (mainTemp, cityName, countryName, lowTemp, highTemp,
   maxTempContainer.appendChild(maxTempValue);
 
   dataContainer.appendChild(maxTempContainer);
-
 
   // min temperature conatainer
   const minTempContainer = document.createElement('div');
@@ -126,7 +124,6 @@ const weatherCard = (mainTemp, cityName, countryName, lowTemp, highTemp,
 
   // clouds
   const cloudContainer = document.createElement('div');
-
 
   const cloudParagraph = document.createElement('p');
   cloudParagraph.setAttribute('class', 'main-desc ps-5 color-white');

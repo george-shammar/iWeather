@@ -6,7 +6,6 @@ buttonDiv.style.display = 'none';
 
 const bgOne = document.querySelector('.body-one');
 
-
 const changeBackground = (temp) => {
   if (temp <= 20) {
     bgOne.style.backgroundColor = 'rgb(137, 202, 153)';
@@ -71,7 +70,6 @@ const dataInfo = (location) => {
     document.getElementById('error').innerHTML = '';
   };
 };
-
 
 const getData = async () => {
   const weather = await dataInfo();
